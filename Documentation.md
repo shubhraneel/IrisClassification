@@ -32,4 +32,4 @@ Combining the various criteria for computing Gini impurities we get a lots of gi
 
 The Entropy, on the other hand, is given by -p(y)log_2(p(y)) - p(n)log_2(p(n)). Every thing else about the approach remains the same. Here also we check for lower Entropy.
 
-The Entropy and Gini have been defined for Binary trees only. If we want to use non-binary trees, we need not use the one vs all approach, rather we define Gini impurity as 1 - sum((p(i)^2) and Entropy as sum(-p(i)log_2(p_i)).
+The Entropy and Gini have been defined for Binary trees only. If we want to use non-binary trees, we need not use the one vs all approach, rather we define Gini impurity as 1 - sum((p(i)^2) and Entropy as sum(-p(i)log_2(p(i))).
