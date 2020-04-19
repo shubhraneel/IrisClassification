@@ -17,7 +17,7 @@ value = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
 #colors = {'Iris-setosa': 'red', 'Iris-versicolor': 'green', 'Iris-virginica': 'blue'}
 y = [key[k] for k in Y] 
 xTrain, xTest, yTrain, yTest = train_test_split(X, y, test_size = 0.3, shuffle = True)
-clf = tree.DecisionTreeClassifier()
+clf = tree.SVC()
 clf = clf.fit(xTrain, yTrain)
 tree.plot_tree(clf)
 dot_data = tree.export_graphviz(clf, out_file=None) 
