@@ -16,7 +16,7 @@ value = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
 #colors = {'Iris-setosa': 'red', 'Iris-versicolor': 'green', 'Iris-virginica': 'blue'}
 y = [key[k] for k in Y] 
 xTrain, xTest, yTrain, yTest = train_test_split(X, y, test_size = 0.3, shuffle = True)
-clf = SVC(kernel='poly', degree=2)
+clf = SVC(kernel='rbf')
 clf = clf.fit(xTrain, yTrain)
 
 
